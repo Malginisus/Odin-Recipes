@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px 120px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 36px; 
+}
+
+img {
+    max-width: 256px;
+    align-self: center;
+}
+
+header {
+    font-weight: 900;
+    font-size: x-large;
+    align-self: center;
+}
+
+.description, .ingredients, .steps {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.description > h2, .ingredients > h2, .steps > h2 {
+    min-width: 240px;
+}
+
+.steps {
+    padding-bottom: 24px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+  }
